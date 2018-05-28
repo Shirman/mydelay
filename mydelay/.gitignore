@@ -1,0 +1,11 @@
+/target/
+/.classpath
+/.project
+/.settings
+/workspace3
+*.log
+/.idea/*
+*.iml
+/docker-dir/*.jar
+/out/
+/logs/
