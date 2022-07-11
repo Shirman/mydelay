@@ -14,7 +14,7 @@ import java.util.Set;
 public class TopicFactory {
     private static Set<Topic> topics = new HashSet<>();
 
-    public static Topic createTopic(String name){
+    public synchronized static Topic createTopic(String name){
         if (name == null || "".equals(name)){
             throw new TopicNullException("话题内容不能为空");
         }
